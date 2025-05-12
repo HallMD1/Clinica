@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { initializeFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 import EmojiPicker from "emoji-picker-react";
 
 const firebaseConfig = {
@@ -18,7 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // ✅ FORZAMOS que use chatdb (y no la anterior chatclinica)
-const db = initializeFirestore(app, {
+const db = getFirestore(app, {
   experimentalForceLongPolling: true,
   useFetchStreams: false
 });
