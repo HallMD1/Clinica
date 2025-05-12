@@ -9,7 +9,7 @@ const firebaseConfig = {
   authDomain: "clinicahall-142d0.firebaseapp.com",
   databaseURL: "https://clinicahall-142d0-default-rtdb.firebaseio.com",
   projectId: "clinicahall-142d0",
-  storageBucket: "clinicahall-142d0.appspot.com",
+  storageBucket: "clinicahall-142d0.firebasestorage.app",
   messagingSenderId: "588094242731",
   appId: "1:588094242731:web:76cf7e298e9fbb28e1dcee",
   measurementId: "G-9XG3DHY2MK"
